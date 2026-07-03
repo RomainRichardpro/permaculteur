@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personas — UXR</title>
+  <style>
+    :root { --bg:#f7f7f8; --card:#fff; --ink:#1a1a2e; --muted:#6b7280; --accent:#4f6bed; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+    header { padding: 2.5rem 1.5rem; text-align:center; }
+    header h1 { margin:0; font-size:1.8rem; }
+    header p { color:var(--muted); margin:.4rem 0 0; }
+    .grid { display:grid; gap:1.5rem; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); max-width:1100px; margin:0 auto; padding:0 1.5rem 3rem; }
+    .card { background:var(--card); border-radius:14px; padding:1.5rem; box-shadow:0 1px 3px rgba(0,0,0,.08); }
+    .card h2 { margin:0 0 .25rem; font-size:1.25rem; }
+    .label { color:var(--accent); font-weight:600; font-size:.85rem; text-transform:uppercase; letter-spacing:.03em; }
+    .card h3 { font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:1.1rem 0 .3rem; }
+    .card ul { margin:.2rem 0; padding-left:1.1rem; }
+    blockquote { border-left:3px solid var(--accent); margin:1rem 0 0; padding:.4rem 0 .4rem .9rem; color:var(--ink); font-style:italic; }
+    .source { font-size:.78rem; color:var(--muted); margin-top:1rem; }
+    .segment { max-width:1100px; margin:0 auto; padding:0 1.5rem 3rem; }
+    .segment .card { border-left:3px solid var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Personas</h1>
+    <p>Recherche utilisateur — synthese de 16 entretiens</p>
+  </header>
+  <main class="grid">
+
+    <article class="card">
+      <span class="label">Debutante</span>
+      <h2>Lea</h2>
+      <p>22-30 ans, jeune active ou etudiante, moins de 10 plantes, moins d'un an de pratique. Vit en appartement urbain, souvent avec peu de lumiere naturelle. A decouvert les plantes via les reseaux sociaux (TikTok, Instagram) ou par un cadeau.</p>
+
+      <h3>Objectifs</h3>
+      <ul>
+        <li>Ne pas tuer ses plantes</li>
+        <li>Rendre son appartement plus vivant et agreable visuellement</li>
+        <li>Avoir un sentiment de responsabilite positif sans charge mentale</li>
+        <li>Obtenir des reponses rapides et simples a des problemes concrets</li>
+      </ul>
+
+      <h3>Frustrations</h3>
+      <ul>
+        <li>Sur-arrosage par exces d'enthousiasme ou sous-arrosage par oubli total</li>
+        <li>Ne sait pas quoi observer ni comment detecter un probleme a temps</li>
+        <li>Ne comprend pas pourquoi ses plantes reagissent differemment</li>
+        <li>Applications existantes trop complexes : onboarding fastidieux, jargon botanique</li>
+        <li>Notifications inadaptees qui ne correspondent pas a la realite de ses plantes</li>
+        <li>Peur de faire des erreurs et de « tuer quelque chose »</li>
+      </ul>
+
+      <h3>Motivations</h3>
+      <ul>
+        <li>Esthetique et ambiance (transformer son studio en espace vert)</li>
+        <li>Decouverte via les reseaux sociaux (TikTok plant hauls, Instagram plant parents)</li>
+        <li>Besoin de prendre soin de quelque chose de vivant</li>
+        <li>Valorisation sociale (ses amis lui demandent des conseils)</li>
+      </ul>
+
+      <h3>Contexte d'usage</h3>
+      <p>Arrose de facon irreguliere (quand elle y pense). Utilise TikTok et Instagram comme ressources principales. Ne consulte Google qu'en cas de probleme visible. Ne prevoit rien pour les vacances.</p>
+
+      <blockquote>« Je suis une debutante assumee, j'ai besoin qu'on me guide sans me juger si je rate. Et j'ai besoin de trucs courts — j'ai pas le temps de lire des articles de 3000 mots. »</blockquote>
+      <p class="source">Ancrage : entretien_Lucie_P, entretien_Hugo_L, entretien_Romain_G, entretien_Thomas_B, entretien_Charlotte_R</p>
+    </article>
+
+    <article class="card">
+      <span class="label">Passionnee</span>
+      <h2>Sophie</h2>
+      <p>30-40 ans, profession intellectuelle ou creative, 10 a 25 plantes, 4 a 7 ans de pratique. A developpe une vraie passion progressive. Vit en appartement urbain, a structure une routine hebdomadaire, nomme ses plantes. Valorise la dimension communautaire.</p>
+
+      <h3>Objectifs</h3>
+      <ul>
+        <li>Developper sa competence et sa comprehension des plantes</li>
+        <li>Creer un environnement de vie coherent et apaisant</li>
+        <li>Identifier et resoudre les problemes avant qu'il ne soit trop tard</li>
+        <li>Partager sa passion avec une communaute</li>
+        <li>Acceder a de l'expertise fiable (diagnostic, identification de maladies)</li>
+      </ul>
+
+      <h3>Frustrations</h3>
+      <ul>
+        <li>Difficulte a identifier les maladies et carences a temps</li>
+        <li>Parasites recurrents difficiles a eradiquer (cochenilles, araignees rouges)</li>
+        <li>Applications existantes trop superficielles ou mal concues</li>
+        <li>Ressources en ligne trop generiques (reponses contradictoires)</li>
+        <li>Perte de plantes malgre les efforts (vecu comme un deuil)</li>
+        <li>Manque de diagnostic visuel fiable</li>
+      </ul>
+
+      <h3>Motivations</h3>
+      <ul>
+        <li>Bien-etre mental et pleine conscience (rituel apaisant)</li>
+        <li>Satisfaction de voir une nouvelle feuille apparaitre</li>
+        <li>Appartenance a une communaute de passionnes</li>
+        <li>Fierte d'avoir sauve ou fait refleurir une plante</li>
+      </ul>
+
+      <h3>Contexte d'usage</h3>
+      <p>Routine structuree (dimanche matin, inspection visuelle quotidienne). Touche systematiquement la terre pour decider d'arroser. Consulte Instagram et Reddit quotidiennement. A essaye et abandonne plusieurs applications (Greg, Bloomify, Planta). Prete a payer 20&#8364;/an pour un diagnostic fiable.</p>
+
+      <blockquote>« Je connais chaque plante par coeur, mais j'aimerais qu'on m'aide a identifier ce qui cloche avant que ce soit trop tard. Souvent quand je vois les signes, c'est deja trop avance. »</blockquote>
+      <p class="source">Ancrage : entretien_Sophie_M, entretien_Claire_T, entretien_Amandine_S, entretien_Isabelle_C</p>
+    </article>
+
+    <article class="card">
+      <span class="label">Collectionneur</span>
+      <h2>Jean</h2>
+      <p>45-70 ans, profession scientifique, technique ou retraite, 30+ plantes (souvent 50+), 10+ ans de pratique. Collection specialisee (orchidees, plantes rares, especes botaniques, aroids). Approche systematique et rigoureuse.</p>
+
+      <h3>Objectifs</h3>
+      <ul>
+        <li>Maitriser des especes complexes ou rares</li>
+        <li>Acceder a des donnees botaniques serieuses (taxonomie, conditions par espece)</li>
+        <li>Optimiser les conditions de culture (temperature, humidite, substrat)</li>
+        <li>Documenter sa collection de facon rigoureuse</li>
+        <li>Echanger avec des pairs de meme niveau</li>
+      </ul>
+
+      <h3>Frustrations</h3>
+      <ul>
+        <li>Applications existantes trop superficielles et grand public</li>
+        <li>Manque de granularite taxonomique (confusion especes/sous-especes)</li>
+        <li>Absence d'interface avec des bases de donnees botaniques mondiales</li>
+        <li>Marche des plantes rares opaque et risque</li>
+        <li>Difficulte a trouver des protocoles pour especes peu documentees</li>
+      </ul>
+
+      <h3>Motivations</h3>
+      <ul>
+        <li>Passion scientifique et satisfaction intellectuelle</li>
+        <li>Defis techniques (faire refleurir, acclimater une espece rare)</li>
+        <li>Appartenance a une communaute de specialistes</li>
+        <li>Transmission de la passion et de la rigueur</li>
+        <li>Rarete comme valeur</li>
+      </ul>
+
+      <h3>Contexte d'usage</h3>
+      <p>Routine quotidienne tres structuree et differenciee par espece. Documentation rigoureuse (Excel, carnets manuscrits). Outils professionnels ou DIY (humidimetre, testeur de pH, serre, Arduino). N'utilise aucune application grand public. Investit financierement dans sa collection.</p>
+
+      <blockquote>« Les applications grand public sont trop superficielles pour un collectionneur serieux. Ce qu'il faut c'est de la donnee de qualite, pas des notifications d'arrosage generiques. »</blockquote>
+      <p class="source">Ancrage : entretien_Jean_Paul_F, entretien_Pierre_Antoine_L, entretien_Oceane_P, entretien_Alexis_V, entretien_Valerie_N</p>
+    </article>
+
+  </main>
+
+  <section class="segment">
+    <article class="card">
+      <span class="label">Segment non couvert</span>
+      <h2>Jardiniers anciens en exterieur</h2>
+      <p>60-75 ans, plusieurs decennies de pratique (30-50 ans), jardinage en exterieur (potager, jardin, fruitiers). Savoirs ancres dans l'experience mais perturbes par le changement climatique. Besoins trop distincts pour etre couverts par un outil pense pour les plantes d'interieur.</p>
+      <p class="source">Ancrage : entretien_Bernard_M, entretien_Marie_Christine_D</p>
+    </article>
+  </section>
+</body>
+</html>

@@ -1,40 +1,80 @@
-# Grille d'analyse — App potager
+# Grille d'analyse — Entretiens UXR plantes
 
-Version validée par le designer avant codage.
-Date : 2026-06-12
-Corpus : 16 entretiens utilisateurs (jardiniers amateurs)
+Date de validation : 2026-07-01
+Corpus : 16 entretiens utilisateurs
 
----
+## Contexte
 
-## Axes de codage
+Cette grille structure le codage des 16 entretiens pour identifier les motivations, pain points, besoins et freins des utilisateurs dans leur pratique d'entretien de plantes. Elle a été co-construite avec le designer et validée avant le début du codage.
 
-| Axe | Code | Définition opérationnelle |
-|-----|------|--------------------------|
-| Pratiques actuelles | PRAT | Comment le potager est organisé et suivi aujourd'hui (outils physiques, fréquence de passage, rituels d'observation) |
-| Motivations | MOTIV | Pourquoi la personne jardine et pourquoi elle envisagerait de s'outiller numériquement |
-| Douleurs | PAIN | Frustrations vécues, erreurs récurrentes, situations qui font perdre du temps ou de la récolte |
-| Besoins exprimés | BESOIN | Ce que la personne demande explicitement ("j'aimerais", "il me faudrait", "ce serait bien si...") |
-| Besoins implicites | BESOIN-I | Ce que le comportement ou le raisonnement révèle sans que la personne le nomme directement |
-| Freins à l'adoption | FREIN | Ce qui bloque ou retarderait l'usage d'une application numérique |
-| Contexte d'usage | CTX | Où et quand l'app serait consultée (jardin, cuisine, déplacements, soir au canapé…) |
-| Outils existants | OUTIL | Rapport aux solutions actuellement utilisées (carnet, tableur, apps, livres, forums) |
-| Niveau d'expertise | EXPERT | Profil comportemental du jardinier (durée de pratique, mode d'apprentissage, autonomie) |
-| Citations marquantes | VERBATIM+ | Formulations particulièrement révélatrices à extraire telles quelles |
+## Axes de codage (15 axes)
 
----
+### 1. Profil
+- Nombre de plantes possédées
+- Ancienneté de la pratique (en années)
+- Types de plantes cultivées
 
-## Questions de recherche pilotant l'analyse
+### 2. Motivation initiale
+Pourquoi l'utilisateur a-t-il commencé à cultiver des plantes.
 
-1. Quelles sont les douleurs les plus fréquentes et les plus coûteuses (en récolte, en temps, en frustration) ?
-2. Quels sont les moments clés dans la saison où le besoin d'information est le plus fort ?
-3. Quel est le rapport actuel aux outils numériques de jardinage — et qu'est-ce qui bloque leur adoption ?
-4. Quels profils comportementaux émergent du corpus ?
-5. Y a-t-il des besoins non couverts que personne ne formule explicitement ?
+### 3. Relation aux plantes
+Intensité et nature du lien affectif / émotionnel avec les plantes.
 
----
+### 4. Routine d'entretien
+Fréquence, rituels, organisation, outils utilisés dans la routine quotidienne ou hebdomadaire.
 
-## Périmètre
+### 5. Signal d'arrosage
+Comment l'utilisateur décide du moment d'arroser (observation, toucher, mémoire, rappel numérique, fréquence fixe).
 
-- Jardiniers amateurs uniquement (pas de maraîchers professionnels).
-- Focus sur le potager (légumes, aromates) — le jardin d'agrément est hors périmètre sauf si la personne l'aborde spontanément.
-- Corpus : 16 entretiens semi-directifs individuels.
+### 6. Gestion des vacances
+Stratégies mises en place lors d'absences prolongées.
+
+### 7. Problèmes rencontrés
+Pain points principaux : sur-arrosage, parasites, lumière, température, identification de maladies, etc.
+
+### 8. Plantes perdues
+Impact affectif, causes identifiées, apprentissages tirés.
+
+### 9. Ressources actuelles
+Sources d'information utilisées : web, livres, communautés, réseaux sociaux, entourage.
+
+### 10. Applications essayées
+Outils numériques testés, durée d'utilisation, verdict (maintenu / abandonné), raisons.
+
+### 11. Ce qui compte le plus
+Motivation profonde, valeur centrale dans la pratique de l'entretien de plantes.
+
+### 12. Fierté / succès
+Moments de réussite, accomplissements dont l'utilisateur est fier.
+
+### 13. Solution idéale
+Outil ou aide parfaite imaginée par l'utilisateur pour répondre à ses besoins.
+
+### 14. Conseil aux débutants
+Savoirs clés que l'utilisateur transmettrait à quelqu'un qui débute.
+
+### 15. Verbatim clé
+Citation représentative qui résume la posture, le besoin ou le pain point de l'utilisateur.
+
+## Questions de recherche
+
+Cette grille permet de répondre aux 5 questions de recherche suivantes :
+
+1. **Quelles sont les motivations profondes qui poussent à entretenir des plantes ?**
+   Axes mobilisés : 2, 3, 11, 12
+
+2. **Quels sont les pain points majeurs dans l'entretien au quotidien ?**
+   Axes mobilisés : 4, 5, 6, 7, 8
+
+3. **Pourquoi les applications existantes sont-elles abandonnées ?**
+   Axes mobilisés : 10, 13
+
+4. **Quel niveau d'expertise est attendu d'un outil numérique ?**
+   Axes mobilisés : 9, 10, 13, 14
+
+5. **Quelle est la valeur perçue d'une aide numérique par rapport aux ressources classiques ?**
+   Axes mobilisés : 9, 10, 11, 13
+
+## Note méthodologique
+
+L'axe "Zones d'incertitude" initialement proposé a été retiré lors de la validation. Les incertitudes exprimées par les utilisateurs sont codées dans les axes existants (notamment axes 7, 8, 9, 13).
