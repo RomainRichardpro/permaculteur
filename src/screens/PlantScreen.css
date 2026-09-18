@@ -1,0 +1,237 @@
+.plant-photo-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin: 8px 20px 0;
+  border-radius: var(--radius-lg);
+  background: var(--color-block-mint);
+  flex-shrink: 0;
+}
+
+.plant-title-row {
+  padding: 16px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.plant-title-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plant-title-line h1 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--color-ink);
+}
+
+.plant-species {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-ink);
+  opacity: 0.45;
+}
+
+.plant-section-header {
+  padding: 22px 20px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.plant-section-header h2 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 540;
+  line-height: 24px;
+  color: var(--color-ink);
+}
+
+.plant-generic-signal {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px dashed var(--color-hairline);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-soft);
+  padding: 14px;
+  margin: 8px 20px 0;
+}
+
+.plant-generic-signal-icon {
+  opacity: 0.4;
+}
+
+.plant-generic-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-block-cream);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  margin: 8px 20px 0;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+.plant-no-history {
+  opacity: 0.7;
+}
+
+.plant-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 0;
+}
+
+.plant-tools-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plant-lost-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  align-self: center;
+  background: none;
+  border: none;
+  padding: 4px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-ink);
+  opacity: 0.4;
+}
+
+.plant-lost-banner {
+  margin: 16px 20px 0;
+  padding: 14px;
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.plant-lost-title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.plant-lost-link {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-ink);
+  text-decoration: underline;
+}
+
+.plant-milestone-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plant-milestone-option {
+  width: 100%;
+}
+
+.plant-celebration {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 350px;
+  padding: 12px 14px;
+  background: var(--color-block-lime);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ink);
+  text-align: center;
+  z-index: 10;
+}
+
+.plant-spacer {
+  flex: 1;
+}
+
+.plant-watered-confirmation {
+  pointer-events: none;
+}
+
+.plant-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.plant-modal {
+  max-width: 390px;
+  width: 100%;
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plant-modal-text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--color-ink);
+}
+
+.plant-modal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.plant-modal-btn {
+  flex: 1;
+  padding: 9px;
+  font-size: 13px;
+}
+
+.plant-not-found {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}

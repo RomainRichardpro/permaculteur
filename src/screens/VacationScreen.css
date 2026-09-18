@@ -1,0 +1,101 @@
+.vacation-content {
+  padding: 16px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vacation-title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.vacation-days-label {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-ink);
+  opacity: 0.65;
+}
+
+.vacation-days-input {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-md);
+  width: 100px;
+}
+
+.vacation-empty {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-ink);
+  opacity: 0.65;
+}
+
+.vacation-plan-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vacation-plan-item {
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.vacation-plan-item--risk {
+  background: var(--color-block-pink);
+}
+
+.vacation-plan-name {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.vacation-plan-resistance {
+  margin: 2px 0 0;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-ink);
+  opacity: 0.75;
+}
+
+.vacation-plan-action {
+  margin: 4px 0 0;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 320;
+  color: var(--color-ink);
+  opacity: 0.65;
+}
+
+.vacation-sitter-offer {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  background: var(--color-block-cream);
+  border-radius: var(--radius-md);
+}
+
+.vacation-sitter-text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-ink);
+}

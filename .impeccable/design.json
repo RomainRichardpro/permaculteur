@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-18T00:00:00.000Z",
+  "title": "Design System: Permaculteur",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Ink", "canonical": "#000000" },
+      "canvas": { "role": "neutral", "displayName": "Canvas", "canonical": "#FFFFFF" },
+      "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "#E6E6E6" },
+      "surface-soft": { "role": "neutral", "displayName": "Surface Soft", "canonical": "#F7F7F5" },
+      "overlay-card": { "role": "neutral", "displayName": "Overlay Card (glass)", "canonical": "#FFFFFFEB" },
+      "block-mint": { "role": "tertiary", "displayName": "Block Mint", "canonical": "#C8E6CD" },
+      "block-lime": { "role": "tertiary", "displayName": "Block Lime", "canonical": "#DCEEB1" },
+      "block-lilac": { "role": "tertiary", "displayName": "Block Lilac", "canonical": "#C5B0F4" },
+      "block-cream": { "role": "tertiary", "displayName": "Block Cream", "canonical": "#F4ECD6" },
+      "block-pink": { "role": "tertiary", "displayName": "Block Pink", "canonical": "#EFD4D4" },
+      "block-coral": { "role": "tertiary", "displayName": "Block Coral", "canonical": "#F3C9B6" },
+      "block-navy": { "role": "tertiary", "displayName": "Block Navy", "canonical": "#1F1D3D" },
+      "semantic-success": { "role": "semantic", "displayName": "Success Green", "canonical": "#1EA64A" }
+    },
+    "typographyMeta": {
+      "headline": { "displayName": "Headline", "purpose": "Titre d'accroche de l'onboarding uniquement." },
+      "title": { "displayName": "Title", "purpose": "Nom de la plante sur la fiche." },
+      "eyebrow": { "displayName": "Eyebrow", "purpose": "En-tête de section, mono uppercase tracké." },
+      "species-name": { "displayName": "Species Name", "purpose": "Nom latin, mono, casse normale." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      { "name": "mobile", "value": "390px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Pilule noire pleine largeur, action principale d'une barre de CTA.",
+      "html": "<button class=\"ds-btn-primary\">Marquer comme arrosé</button>",
+      "css": ".ds-btn-primary { display: flex; align-items: center; justify-content: center; width: 100%; padding: 14px; border-radius: var(--radius-pill); background: var(--color-primary); color: var(--color-on-primary); font-family: var(--font-sans); font-size: 15px; font-weight: 600; line-height: 18px; border: none; } .ds-btn-primary:hover { opacity: 0.9; } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Outline Button",
+      "kind": "button",
+      "refersTo": "button-secondary-outline",
+      "description": "Pilule à bordure noire, action secondaire ou option \"non\" d'une confirmation.",
+      "html": "<button class=\"ds-btn-secondary\">Taper le nom de ma plante</button>",
+      "css": ".ds-btn-secondary { display: flex; align-items: center; justify-content: center; padding: 14px; border-radius: var(--radius-pill); background: var(--color-canvas); color: var(--color-ink); font-family: var(--font-sans); font-size: 15px; font-weight: 600; line-height: 18px; border: 1px solid var(--color-ink); } .ds-btn-secondary:hover { background: var(--color-surface-soft); }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "badge-status",
+      "description": "Pilule pleine noire, texte blanc gras, statut d'entretien sur la fiche plante.",
+      "html": "<span class=\"ds-badge-status\">À ARROSER</span>",
+      "css": ".ds-badge-status { display: inline-block; padding: 5px 12px; border-radius: var(--radius-pill); background: var(--color-primary); color: var(--color-on-primary); font-family: var(--font-sans); font-size: 11px; font-weight: 700; line-height: 14px; }"
+    },
+    {
+      "name": "Confidence Badge",
+      "kind": "chip",
+      "refersTo": "confidence-badge",
+      "description": "Pastille + texte vert, niveau de confiance du diagnostic photo.",
+      "html": "<span class=\"ds-confidence\"><span class=\"ds-confidence-dot\"></span>Confiance : probable</span>",
+      "css": ".ds-confidence { display: flex; align-items: center; gap: 6px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; line-height: 16px; color: var(--color-semantic-success); } .ds-confidence-dot { width: 8px; height: 8px; border-radius: var(--radius-full); background: var(--color-semantic-success); flex-shrink: 0; }"
+    },
+    {
+      "name": "Protocol Step",
+      "kind": "card",
+      "refersTo": "protocol-step",
+      "description": "Étape numérotée d'un protocole de traitement, seule surface \"surélevée\" du système.",
+      "html": "<div class=\"ds-protocol-step\"><span class=\"ds-step-badge\">1</span><div class=\"ds-protocol-step-body\"><p class=\"ds-protocol-step-title\">Isolation</p><p class=\"ds-protocol-step-desc\">Éloigne la plante des autres pendant le traitement</p></div></div>",
+      "css": ".ds-protocol-step { display: flex; align-items: flex-start; gap: 12px; padding: 14px; border-radius: var(--radius-md); background: var(--color-surface-soft); } .ds-step-badge { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; flex-shrink: 0; border-radius: var(--radius-full); background: var(--color-primary); color: var(--color-on-primary); font-family: var(--font-sans); font-size: 13px; font-weight: 700; line-height: 16px; } .ds-protocol-step-title { margin: 0; font-family: var(--font-sans); font-size: 14px; font-weight: 600; line-height: 18px; color: var(--color-ink); } .ds-protocol-step-desc { margin: 0; font-family: var(--font-sans); font-size: 12px; font-weight: 320; line-height: 16px; color: var(--color-ink); opacity: 0.65; }"
+    },
+    {
+      "name": "Notification Card",
+      "kind": "card",
+      "refersTo": "notification-card",
+      "description": "Carte flottante blanche translucide, usage exclusif écran verrouillé.",
+      "html": "<div class=\"ds-notif-card\"><div class=\"ds-notif-icon\">🌿</div><div><div class=\"ds-notif-head\"><span class=\"ds-notif-app\">PERMACULTEUR</span><span class=\"ds-notif-time\">maintenant</span></div><p class=\"ds-notif-title\">Ton pothos a probablement soif</p><p class=\"ds-notif-body\">Tu l'as arrosé il y a 12 jours et il fait chaud cette semaine.</p></div></div>",
+      "css": ".ds-notif-card { display: flex; align-items: flex-start; gap: 12px; padding: 14px; border-radius: var(--radius-lg); background: #FFFFFFEB; } .ds-notif-icon { width: 36px; height: 36px; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; background: var(--color-canvas); flex-shrink: 0; } .ds-notif-head { display: flex; justify-content: space-between; } .ds-notif-app { font-family: var(--font-sans); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--color-ink); } .ds-notif-time { font-family: var(--font-sans); font-size: 12px; color: var(--color-ink); opacity: 0.5; } .ds-notif-title { margin: 4px 0 0; font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: var(--color-ink); } .ds-notif-body { margin: 2px 0 0; font-family: var(--font-sans); font-size: 13px; color: var(--color-ink); opacity: 0.75; }"
+    },
+    {
+      "name": "Toggle Switch (off)",
+      "kind": "input",
+      "refersTo": "toggle-switch-off",
+      "description": "Piste pilule + thumb cercle, état désactivé observé. État activé non conçu — inféré cohérent avec le système monochrome (piste noire).",
+      "html": "<span class=\"ds-toggle\"><span class=\"ds-toggle-thumb\"></span></span>",
+      "css": ".ds-toggle { display: inline-flex; align-items: center; width: 44px; height: 26px; padding: 2px; border-radius: var(--radius-pill); background: var(--color-hairline); flex-shrink: 0; } .ds-toggle-thumb { width: 22px; height: 22px; border-radius: var(--radius-full); background: var(--color-canvas); }"
+    },
+    {
+      "name": "Action Row",
+      "kind": "nav",
+      "refersTo": "action-row",
+      "description": "Ligne tappable dans un action-card : icône ronde, libellé + description, chevron. Remplace une pile de liens soulignés.",
+      "html": "<button class=\"ds-action-row\"><span class=\"ds-action-row-icon\">💧</span><span class=\"ds-action-row-body\"><span class=\"ds-action-row-label\">Diagnostic photo</span><span class=\"ds-action-row-desc\">Cause probable + protocole</span></span><span class=\"ds-action-row-chevron\">›</span></button>",
+      "css": ".ds-action-row { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px 14px; border: none; border-bottom: 1px solid var(--color-hairline-soft); background: var(--color-canvas); text-align: left; } .ds-action-row-icon { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex-shrink: 0; border-radius: var(--radius-full); background: var(--color-surface-soft); } .ds-action-row-body { display: flex; flex-direction: column; flex: 1; } .ds-action-row-label { font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: var(--color-ink); } .ds-action-row-desc { font-family: var(--font-sans); font-size: 12px; color: var(--color-ink); opacity: 0.6; } .ds-action-row-chevron { color: var(--color-ink); opacity: 0.5; }"
+    },
+    {
+      "name": "Quick Action Tile",
+      "kind": "nav",
+      "refersTo": "quick-action-tile",
+      "description": "Tuile compacte icône + libellé pour une rangée d'accès rapides horizontale.",
+      "html": "<button class=\"ds-quick-tile\"><span class=\"ds-quick-tile-icon\">🧳</span><span class=\"ds-quick-tile-label\">Vacances</span></button>",
+      "css": ".ds-quick-tile { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1; padding: 12px 8px; border: none; border-radius: var(--radius-md); background: var(--color-surface-soft); } .ds-quick-tile-icon { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: var(--radius-full); background: var(--color-canvas); } .ds-quick-tile-label { font-family: var(--font-sans); font-size: 11px; font-weight: 600; color: var(--color-ink); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le carnet de terrain (The Field Journal)",
+    "overview": "Permaculteur emprunte la grammaire visuelle d'un carnet de botaniste amateur : des repères précis et tracés en mono (statuts, noms d'espèces, en-têtes de section) posés sur une typographie humaine (Inter) qui porte le vrai contenu — les signaux d'observation, les explications, le ton bienveillant. Le système reste presque monochrome (noir/blanc, un seul niveau de gris de bordure) et réserve la couleur aux aplats pastel doux (menthe, lime, lilas, corail) qui habillent les zones \"vivantes\" — la photo de la plante, les futurs blocs de contenu — jamais le texte ni les contrôles.\n\nCe n'est pas un système décoratif : chaque choix mono (nom latin en petites capitales trackées, eyebrows de section, badges de statut) sert la même intention que dans un vrai carnet de terrain — distinguer la donnée observée (précise, presque scientifique) du commentaire qui l'accompagne (chaleureux, jamais jugeant). Les boutons sont toujours en pilule, les icônes toujours en cercle plein — aucune arête vive nulle part, cohérent avec un objet qu'on manipule au quotidien plutôt qu'un outil professionnel froid.",
+    "keyCharacteristics": [
+      "Deux typographies avec des rôles stricts : Inter pour tout ce qui est lu, JetBrains Mono réservé aux repères taxonomiques et de statut.",
+      "Système quasi monochrome — la couleur n'apparaît que dans les aplats pastel et le seul signal sémantique (succès du diagnostic).",
+      "Pilule partout pour les actions, cercle plein pour les icônes et badges numérotés — aucun angle droit sur un élément actionnable.",
+      "L'opacité (pas une palette de gris) porte la hiérarchie du texte secondaire.",
+      "Poids de police variable Inter exploité finement (320 à 700) sans jamais changer de taille pour signaler l'importance."
+    ],
+    "rules": [
+      { "name": "La règle du monochrome", "body": "Le texte et les contrôles restent noir/blanc/opacité ; la couleur n'habille que les surfaces vivantes et le seul signal sémantique. Ne jamais colorer un bouton, un badge de statut ou un texte de navigation avec un block-*.", "section": "colors" },
+      { "name": "La règle du plat", "body": "Pas d'ombre applicative. Une surface se distingue par sa couleur de fond ou une bordure hairline, jamais par une élévation simulée.", "section": "elevation" }
+    ],
+    "dos": [
+      "Réserver le noir à ce qui doit être vu et actionné en premier : CTA, badge de statut, numéro d'étape.",
+      "Utiliser le mono exclusivement pour les repères taxonomiques et les en-têtes de section, jamais pour un paragraphe.",
+      "Faire porter la hiérarchie du texte secondaire par l'opacité, pas par une nouvelle couleur de gris.",
+      "Garder chaque bouton en pilule et chaque badge/icône en cercle plein.",
+      "Poser les aplats pastel uniquement sur des surfaces vivantes, jamais sur un texte ou un contrôle."
+    ],
+    "donts": [
+      "Ne pas ajouter d'ombre portée.",
+      "Ne pas mettre le nom latin d'une plante en majuscules.",
+      "Ne pas introduire de couleur sémantique en dehors du vert succès sans validation.",
+      "Ne pas donner un rayon au bouton de swipe-reveal.",
+      "Ne pas réutiliser le blanc translucide de la notification comme fond de carte ordinaire."
+    ]
+  }
+}

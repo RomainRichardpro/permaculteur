@@ -1,0 +1,92 @@
+.parasite-content {
+  padding: 16px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.parasite-eyebrow-wrap {
+  padding: 0 20px;
+}
+
+.parasite-title {
+  margin: 0 0 8px;
+  padding: 0 20px;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.parasite-choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 20px;
+}
+
+.parasite-choice-item {
+  text-align: left;
+  padding: 14px;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.parasite-contamination-warning {
+  background: var(--color-block-coral);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  margin: 0 20px 8px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+.parasite-reapply-hint {
+  margin: 4px 20px 0;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-ink);
+  opacity: 0.5;
+}
+
+.parasite-outcome {
+  margin-top: 24px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.parasite-outcome-question {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.parasite-outcome-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.parasite-outcome-actions > * {
+  flex: 1;
+}
+
+.parasite-not-found {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+}

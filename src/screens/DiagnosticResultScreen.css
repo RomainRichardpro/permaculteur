@@ -1,0 +1,120 @@
+.result-photo-frame {
+  height: 140px;
+  margin: 8px 20px 0;
+  border-radius: var(--radius-lg);
+  background: var(--color-block-coral);
+  flex-shrink: 0;
+}
+
+.result-header {
+  padding: 16px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.result-header h1 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--color-ink);
+}
+
+.result-protocol-header {
+  padding: 20px 20px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.result-protocol-header h2 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 540;
+  line-height: 22px;
+  color: var(--color-ink);
+}
+
+.result-spacer {
+  flex: 1;
+}
+
+.result-unreadable {
+  padding: 16px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.result-unreadable-title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.result-unreadable-card {
+  border: 1px dashed var(--color-hairline);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-soft);
+  padding: 14px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 320;
+  line-height: 1.5;
+  color: var(--color-ink);
+  opacity: 0.75;
+}
+
+.result-uncertain-banner {
+  margin: 16px 20px 0;
+  background: var(--color-block-lilac);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.result-uncertain-title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.result-uncertain-desc {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 320;
+  line-height: 1.4;
+  color: var(--color-ink);
+  opacity: 0.75;
+}
+
+.result-cause-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 20px 0;
+}
+
+.result-cause-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  background: var(--color-canvas);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
